@@ -22,7 +22,7 @@ themselves), see the
 
 | Tool                    | Description                                                                                                                        |
 | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `search_search`         | Global Search — execute a Lucene query against the entire Flare threat-intel dataset.                                              |
+| `search_global`         | Global Search — execute a Lucene query against the entire Flare threat-intel dataset.                                              |
 | `search_tenant`         | Tenant Search — execute a Lucene query scoped to events matching the caller's monitored identifiers.                               |
 | `validate_search_query` | Validate that a Lucene query complies with Flare's search rules before running it. Useful when composing or debugging a query.     |
 | `get_event_type`        | Return the documentation and searchable field list for a given event type (e.g. `chat_message`, `forum_post`, `stealer_log`).      |
@@ -30,7 +30,7 @@ themselves), see the
 
 ### Search Parameters
 
-The `search_search` (Global) and `search_tenant` (Tenant) tools accept the
+The `search_global` (Global) and `search_tenant` (Tenant) tools accept the
 same parameters:
 
 <ParamField body="query" type="string" required>
